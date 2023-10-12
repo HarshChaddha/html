@@ -9,101 +9,191 @@
         body {
             margin: 0;
             padding: 0;
-            border: 5px solid #141312;
-            background-image: url('file:///C:/Users/Dell/Desktop/html/LUXECHIKAN.jpeg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center center;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .centered {
+            background-image: url('"C:\Users\Dell\Desktop\html\LUXECHIKAN.jpeg"');
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
             text-align: center;
         }
 
         /* Header styles */
         header {
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: #141312;
             color: white;
             padding: 20px;
         }
 
         h1 {
-            font-size: 36px;
+            font-size: 48px; /* Increase font size */
+            font-weight: bold; /* Make the heading bold */
+            text-transform: uppercase; /* Uppercase text */
+            font-style: italic; /* Add italics */
         }
 
-        /* Main content container */
+        /* Section styles */
+        .section {
+            padding: 50px 0;
+            background-color: #fff;
+        }
+
+        /* Content styles */
         .content {
-            flex-grow: 1;
-            display: flex;
-        }
-
-        /* Left column styles */
-        .left-column {
-            width: 30%;
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
         }
 
-        /* Right column styles */
-        .right-column {
-            width: 70%;
-            padding: 20px;
+        /* Heading styles with black border */
+        h2 {
+            font-size: 32px; /* Increase font size */
+            color: #141312; /* Change text color */
+            margin-bottom: 20px; /* Add some spacing below the heading */
+            text-transform: capitalize; /* Capitalize the text */
+            font-style: italic; /* Add italics */
+            border: 2px solid black; /* Add a black border */
+            padding: 10px; /* Add some padding to the heading */
+            display: inline-block; /* Make the border fit the content width */
         }
 
-        /* Product styles */
-        .product {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 20px;
+        /* Colorful paragraph */
+        .colorful-paragraph {
+            text-align: left;
+            background-color: #ffcc00; /* Background color */
+            padding: 10px; /* Add some padding */
+            border: 2px solid #ff9900; /* Border color */
+            color: #333; /* Text color */
+            font-weight: bold; /* Make text bold */
         }
 
-        /* Footer styles */
-        footer {
-            background-color: rgba(0, 0, 0, 0.7);
+        /* Navigation styles */
+        nav {
+            background-color: #141312;
             color: white;
-            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>LUXECHIKAN</h1>
-        <p>Welcome to LUXECHIKAN - Your Destination for Exquisite Fashion</p>
+        <p>Welcome to LUXECHIKAN's exquisite collection of suits. Our suits are a perfect blend of sophistication, style, and craftsmanship. Whether you're dressing for a business meeting, a special occasion, or simply want to make a lasting impression, our suits have you covered.</p>
     </header>
 
-    <div class="content">
-        <div class="left-column">
-            <h2>Categories</h2>
-            <ul>
-                <li><a href="#">Suits</a></li>
-                <li><a href="#">Anarkali</a></li>
-                <li><a href="#">Lehenga</a></li>
-                <li><a href="#">Dupatta</a></li>
-                <li><a href="#">Saree</a></li>
-            </ul>
-        </div>
-        <div class="right-column">
+    <nav>
+        <ul>
+            <li><a href="#suits">Suits</a></li>
+            <li><a href="#anarkali">Anarkali</a></li>
+            <li><a href="#lehenga">Lehenga</a></li>
+            <li><a href="#dupatta">Dupatta</a></li>
+            <li><a href="#saree">Saree</a></li>
+        </ul>
+    </nav>
+
+    <div class="section" id="suits">
+        <div class="content">
             <h2>Suits</h2>
-            <div class="product">
-                <h3>Suit 1</h3>
-                <p>Description of Suit 1.</p>
+            <p>"Step into sophistication with our impeccable collection of suits. These classic ensembles offer timeless style and versatility. Our suits come in a variety of fabrics, colors, and styles, making them suitable for both formal occasions and everyday elegance. Elevate your wardrobe with the epitome of tailored perfection."</p>
+            <div class="colorful-paragraph">
+                <p>
+                    <span style="color: red;">Chikan Craftsmanship:</span> Unveil the timeless allure of Chikan craftsmanship with our exquisite Chikan suits. This delicate and intricate embroidery, originating from the heritage city of Lucknow, India, is the heart and soul of our collection. Each Chikan motif is meticulously hand-embroidered, creating a symphony of grace and artistry.
+                    <br>
+                    <span style="color: blue;">Chikan Elegance:</span>The Chikan elegance of our suits is a testament to India's rich textile heritage. The classic Chikan motifs and fine threadwork lend an air of timeless charm and sophistication to your outfit, ensuring you stand out in any gathering.
+                    <br>
+                    <span style="color: green;">Fabric Choices:</span>Our Chikan suits are crafted from a selection of luxurious fabrics, meticulously chosen to complement the delicate embroidery. From the lushness of silk to the comfort of cotton, we offer a range of options that suit different occasions and preferences.
+                </p>
             </div>
-            <div class="product">
-                <h3>Suit 2</h3>
-                <p>Description of Suit 2.</p>
-            </div>
-            <!-- Add more products here -->
         </div>
     </div>
 
+
+    <div class="section" id="dupatta">
+        <div class="content">
+            <h2>Dupatta</h2>
+            <p>"Elevate your ensemble with our stunning dupatta collection. These versatile accessories add a touch of sophistication to any outfit, from sarees to suits. Available in a range of fabrics and embellishments, our dupattas are the perfect complement to your style. Explore the artistry of dupattas, where intricacy meets elegance."</p>
+            <div class="colorful-paragraph">
+                <p>
+                    <span style="color: red;">Chikan Craftsmanship:</span> Chikan, a centuries-old craft originating from Lucknow, India, is a labor of love. Our artisans meticulously hand-embroider intricate patterns, motifs, and designs onto each dupatta, making it a testament to the rich heritage of Indian craftsmanship. With great skill and precision, they create a work of art that marries tradition with contemporary elegance. The Chikan embroidery on our dupattas is a testimony to the dedication and skill of our artisans.                    <br>
+                    <span style="color: blue;">Chikan Elegance:</span>A Chikan-embroidered dupatta is more than just an accessory; it's a piece of art that elevates your attire. The intricate patterns, delicate stitches, and timeless charm of Chikan work bring an air of elegance to any ensemble. Drape it over your shoulders, and the dupatta becomes a symbol of grace and tradition, adding an exquisite touch to your ethnic wear. With Chikan embroidery, you carry a piece of Indian heritage and culture, transforming your outfit into a work of art.
+                    <br>
+                    <span style="color: green;">Fabric Choices:</span>Discover the artistry of Chikan embroidery on a canvas of luxurious fabrics. From the delicate touch of soft, breathable cotton to the regal allure of silk, our Chikan dupattas are available in an array of exquisite materials. Choose your preferred fabric to match your comfort and style, ensuring a sophisticated and comfortable accessory.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="saree">
+        <div class="content">
+            <h2>Saree</h2>
+            <p>"Embrace the allure of our saree collection. These six yards of elegance are a testament to India's rich tradition and craftsmanship. Our sarees come in a myriad of colors, fabrics, and designs, ensuring that you radiate grace and style on every occasion. Discover the beauty of the saree, where tradition meets contemporary fashion."</p>
+            <div class="colorful-paragraph">
+                <p>
+                    <span style="color: red;">Chikan Craftsmanship:</span> Chikan work is an art form that requires skilled artisans to painstakingly create delicate patterns and motifs. Our sarees showcase the dedication and craftsmanship that goes into each piece, making them a labor of love.
+                    <span style="color: blue;">Chikan Elegance:</span> Adorn yourself in timeless grace with our Chikan saree collection. This exquisite embroidery technique, originating from Lucknow, brings a touch of tradition to every drape.
+                    <br>
+                    <span style="color: green;">Fabric Choices:</span> Our Chikan sarees are available in a variety of luxurious fabrics, from airy and delicate chiffon to rich and regal silk. Each fabric complements the Chikan embroidery, offering a unique texture and drape.
+                </p>
+        </div>
+    </div>
+
+    <div class="section" id="lehanga">
+        <div class="content">
+            <h2>lehanga</h2>
+            <p>"Dive into opulence with our stunning Lehenga collection. These exquisite ensembles capture the essence of Indian fashion, blending tradition and style effortlessly. From classic A-line to contemporary mermaid-cut designs, our Lehengas offer a spectrum of styles and fabrics, allowing you to shine at any event. Explore our world of colors, adornments, and silhouettes, and make a statement with grace and elegance." come in a myriad of colors, fabrics, and designs, ensuring that you radiate grace and style on every occasion. Discover the beauty of the saree, where tradition meets contemporary fashion."</p>
+            <div class="colorful-paragraph">
+                <p>
+                    <span style="color: red;">Chikan Craftsmanship:</span>Elevate your style with our exquisite Lehengas, an embodiment of Indian craftsmanship and style. With a wide range of designs, colors, and fabrics, our Lehenga collection is sure to make you the center of attention at any event.
+                    <span style="color: blue;">lehanga style:</span> Our Lehenga collection features a diverse range of styles, from classic A-line and flared Lehengas to contemporary mermaid-cut and jacket Lehengas. Choose the silhouette that best complements your personal style.
+                    <br>
+                    <span style="color: green;">Fabric Choices:</span>Explore a world of luxurious fabrics, including silk, velvet, georgette, and chiffon. Each fabric adds its own unique texture and drape, allowing you to express your individuality.
+                </p>
+        </div>
+    </div>
+
+    <div class="section" id="anarkali">
+        <div class "content">
+            <h2>Anarkali</h2>
+            <p>"Discover the allure of Anarkali suits with Chikan embroidery—a perfect blend of grace and tradition. These regal ensembles feature intricate hand-embroidery, hailing from Lucknow, and adorn flowing frock-style kameez. Available in a spectrum of colors and fabrics, Anarkali suits with Chikan work effortlessly transition from casual elegance to festive grandeur. Elevate your ethnic wardrobe with this timeless classic that epitomizes Indian craftsmanship and style."</p>
+            <div class="colorful-paragraph">
+                <p>
+                    <span style="color: red;">Chikan Craftsmanship:</span> The Chikan work on Anarkali suits is a labor of love. Artisans painstakingly create delicate patterns, motifs, and designs that are both traditional and contemporary. Each piece is a testament to the rich Indian craftsmanship.
+                    <br>
+                    <span style="color: blue;">Chikan Elegance:</span>The heart of an Anarkali suit lies in its exquisite Chikan work. This ancient and delicate hand-embroidery technique hailing from the heritage city of Lucknow adorns the fabric with intricate, threadwork, creating a symphony of grace and charm.
+                    <br>
+                    <span style="color: green;">Fabric Choices:</span>Anarkali suits are crafted from a range of fabrics, from lush silk to comfortable cotton, providing versatility for different occasions. The Chikan work adapts beautifully to the chosen material, making these suits perfect for casual outings, festive celebrations, and formal events
+                </p>
+            </div>
+        </div>
+    </div>
+    
     <footer>
-        <p>Contact us at info@luxechikan.com</p>
+        <p>Here's how you can reach us: </p>
+        <li>Gmail id :<a href="#gmail"> info@luxechikan.com</a></li>
+        <li>Phone number:<a href="#phone number"> 7007910494</a></li>
+        <li> LOCATION : T/4 Nehru Nagar Merapur , Prayagraj, Uttarpradesh,India </li>
     </footer>
 </body>
 </html>
+
+
+
+
+
 
 
 
