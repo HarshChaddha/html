@@ -11,8 +11,42 @@
     <title>LUXECHIKAN</title>
     <style>
 
+.modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(27, 201, 201, 0.7);
+            z-index: 9999;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(255, 254, 254);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .welcome-message {
+            font-size: 24px;
+            color: #030505;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            font-size: 38px;
+            color: #2fd2db;
+            margin-bottom: 20px;
+        }
+
 nav {
-        background-color: #151a1a;
+        background-color: #081010;
         color: rgb(10, 95, 132);
         position: sticky;
         top: 0;
@@ -220,6 +254,40 @@ nav {
     </style>
 </head>
 <body>
+
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <h1>Welcome to LuxeChikan</h1>
+            <p class="welcome-message">Explore the beauty of Chikankari craftsmanship.</p>
+            <p class="features">Features:</p>
+            <ul>
+                <li>Discover our exclusive chikankari collections.</li>
+                <li>Find the perfect chikankari outfit for any occasion.</li>
+                <li>Experience the artistry of chikankari like never before.</li>
+            </ul>
+            <button onclick="closeWelcome(false)">Enter Site</button>
+            <button onclick="closeWelcome(true)"> No, Thanks</button>
+           
+        </div>
+    </div>
+
+    <!-- JavaScript to control the modal dialog -->
+    <script>
+        function openWelcome() {
+            document.getElementById('welcomeModal').style.display = 'block';
+        }
+
+        function closeWelcome(enter) {
+            document.getElementById('welcomeModal').style.display = 'none';
+            if (enter) {
+                // Redirect to the main webpage
+                window.location.href = 'index.html';
+            }
+        }
+
+        // Show the welcome dialog when the page loads
+        window.addEventListener('load', openWelcome);
+    </script>
     <header>
         <h1>LUXECHIKAN</h1>
         <p>Welcome to LUXECHIKAN's exquisite collection of suits. Our suits are a perfect blend of sophistication, style, and craftsmanship. Whether you're dressing for a business meeting, a special occasion, or simply want to make a lasting impression, our suits have you covered.</p>
@@ -495,6 +563,7 @@ nav {
             
         </ul>
     </nav>
+
     
 </body>
 </html>
